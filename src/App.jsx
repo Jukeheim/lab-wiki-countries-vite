@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import './App.css'
 import Navbar from './components/Navbar'
-import CountryDetailsPage from './pages/CountryDetailsPage'
+import CountryDetails from './pages/CountryDetailsPage'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/country/:countryName" element={<CountryDetailsPage />} />
+          <Route path="/country/:countryId" element={<CountryDetails />} />
         </Routes>
       </div>
     </div>
